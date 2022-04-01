@@ -1,1 +1,4 @@
-requests==2.27.1
+pycld2
+websocket
+iso639-lang
+json
