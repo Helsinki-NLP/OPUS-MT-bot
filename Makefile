@@ -6,14 +6,14 @@ TEST_DIR=$(ROOT_DIR)/tests
 
 TRANSLATION_FILE=$(ROOT_DIR)/translation.py
 
-TELEGRAM_DIR=$(ROOT_DIR)/telegram_uk_cs_translation_bot
-TELEGRAM_PACKAGE=$(ROOT_DIR)/telegram_uk_cs_translation_bot.zip
+TELEGRAM_DIR=$(ROOT_DIR)/telegram_opusmt_bot
+TELEGRAM_PACKAGE=$(ROOT_DIR)/telegram_opusmt_bot.zip
 
-MESSENGER_DIR=$(ROOT_DIR)/messenger_uk_cs_translation_bot
-MESSENGER_PACKAGE=$(ROOT_DIR)/messenger_uk_cs_translation_bot.zip
+MESSENGER_DIR=$(ROOT_DIR)/messenger_opusmt_bot
+MESSENGER_PACKAGE=$(ROOT_DIR)/messenger_opusmt_bot.zip
 
-VIBER_DIR=$(ROOT_DIR)/viber_uk_cs_translation_bot
-VIBER_PACKAGE=$(ROOT_DIR)/viber_uk_cs_translation_bot.zip
+VIBER_DIR=$(ROOT_DIR)/viber_opusmt_bot
+VIBER_PACKAGE=$(ROOT_DIR)/viber_opusmt_bot.zip
 
 checks: mypy test
 
