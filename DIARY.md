@@ -1,5 +1,26 @@
 # Diary
 
+## 2022-04-01
+
+- Start to work on integrating the OPUS-MT Telegram Bot
+  - BOT link is http://t.me/opusmt_bot
+  - secrets defined: TELEGRAM_OPUSMT_BOT_TOKEN in TELEGRAM_BOT environment
+  - web hooks:
+    - ```
+      curl -X GET "https://api.telegram.org/bot${TELEGRAM_OPUSMT_BOT_TOKEN}/getMe"
+      ```
+    - ```
+      curl -X POST "https://api.telegram.org/bot${TELEGRAM_OPUSMT_BOT_TOKEN}/setWebhook" \
+      -H "Content-Type: application/json" \
+      -d "{"url\": \"${TELEGRAM_OPUSMT_BOT_LAMBDA}\"}"
+      ```
+    - ```
+      curl -X GET "https://api.telegram.org/bot${TELEGRAM_OPUSMT_BOT_TOKEN}/getWebhookInfo"
+      ```
+  - open questions:
+    - What should be set for TELEGRAM_OPUSMT_BOT_TOKEN?
+    - What kind of web hook do we need to set up in this repo?
+
 ## 2022-03-19
 
 - Create Telegram Bot

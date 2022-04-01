@@ -1,11 +1,15 @@
-# UK Translation Bot
+# OPUS-MT Translation Bot
 
 ## Goal
 
-Create translation bot that will be translating messages between
-Ukrainian and Czech in popular messaging platforms.
+Create translation bots that translate messages using OPUS-MT.
+Currently the focus is on translation to Ukrainian. Additional language support will be added later.
+
+This is a fork of the bots developed for translation between Czech and Ukrainian on various messaging platforms.
 
 ## Results
+
+Status of the original Czech - Ukrainian bot:
 
 - ✅ Telegram Bot: http://t.me/uk_cs_translation_bot
 - ✅ Messenger Bot: https://m.me/uk.cs.translation.bot
@@ -14,7 +18,8 @@ Ukrainian and Czech in popular messaging platforms.
 
 ## API
 
-For the translation we will use UFAL API - https://lindat.cz/translation/
+The original Czech - Ukrainian translation bot uses the UFAL API - https://lindat.cz/translation/
+OPUS-MT runs on https://translate.ling.helsinki.fi/ui/ukrainian
 
 ## Messaging Platforms
 
@@ -57,9 +62,5 @@ It looks that Telegram is popular in Ukraine.
 
 ## Status:
 
-- 2022-03-19: There is cli interface for translation - `python cli.py`
-- 2022-03-19: There is Telegram Bot - http://t.me/uk_cs_translation_bot
-- 2022-03-19: I have requested for WhatsApp business API
-- 2022-03-19: I have requested for approval for Messenger Bot - https://m.me/uk.cs.translation.bot
-- 2022-03-20: Messenger Bot was approved - https://m.me/uk.cs.translation.bot
-- 2022-03-20: Viber Bot is waiting for approval - https://www.viber.com/ukcstranslationbot
+- 2022-04-01: Adjustments to call OPUS-MT services
+- 2022-03-31: Initial fork of the original implementation
